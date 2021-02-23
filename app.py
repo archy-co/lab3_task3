@@ -54,7 +54,7 @@ def build_map(users_data_list):
                                          icon=folium.Icon(icon='star', color='lightblue')))
 
     mappy.add_child(friends_locs)
-    mappy.save('./templates/' + final_mapname)
+    mappy.save('/home/archy2go/tweelocator/templates/' + final_mapname)
 
 
 def coordinate_users(users_data_list):
@@ -75,7 +75,7 @@ def coordinate_users(users_data_list):
     return user_data_coord_list
 
 
-def get_json_as_dict(bearer_token: str, account_name: str, count=20) -> dict:
+def get_json_as_dict(bearer_token: str, account_name: str, count=15) -> dict:
     '''
     This function takes bearer_token and account_name, sends request to twitter API and returns
     JSON reponse as dictionary
