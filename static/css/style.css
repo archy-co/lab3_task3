@@ -1,5 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    background: grey;
+}
+
+body{
+    padding-top: 25px;
+}
+
+input{
+    width: 325px;
+    padding: 5px;
+}
+
+p{
+    margin: 15px 0;
 }

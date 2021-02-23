@@ -6,13 +6,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>Hello</h1>
-    <form action="/" method="post">
-        <input type='text' name='bearer' placeholder='Bearer Token (from twitter)'/>
-        <input type='text' name='account' placeholder='Account name (that thing with @)'/>
+    <center>
+        <form action="/" method="post">
+            <input type='text' name='bearer' placeholder='Bearer Token (from twitter)'/>
+            <input type='text' name='account' placeholder='Account name (that thing with @)'/>
 
-        <input type='submit' value='Enter'/>
+            <input type='submit' value='Enter'/>
+        </form>
 
-    </form>
+        <br><br>
+        <p>* Note, that after entering data, locating user's friends may take some time (up to 15 friends)</p>
+    </center>
 </body>
 </html>
